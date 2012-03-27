@@ -1,0 +1,33 @@
+/*
+  CSS Framework:
+  Examples styles of layouts including 2-column, 3-column, center,
+  fixed, fluid, etc
+*/
+
+/* 2-columns
+   Check out 456beatstreet.com tutorial for handling faux columns,
+   clearing the footer, and good resources.
+   http://bit.ly/eLGdXw
+------------------------------------------------------------- */
+
+div#container {
+  background: #333;
+  margin: 0 auto;
+  width: 960px;
+}
+
+div#nav {
+  background: #666;
+  float: left;
+  width: 100px;
+}
+
+div#content-main {
+  background: #999;
+  float: right;
+  width: 860px;
+}
+
+div#siteinfo {
+  clear: both;
+}

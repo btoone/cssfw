@@ -1,0 +1,121 @@
+/*
+  CSS Framework:
+  Exmaples styles for navigation elements like horizontal tab bars,
+  sub menue, sidebars, etc
+*/
+
+/* Horizontal tab bar; inline
+----------------------------- */
+
+ul#nav-main {
+  list-style:none;
+  margin:0;
+  padding:0; }
+  
+  #nav li {
+    display:inline;
+    margin:0;
+    padding:0; }
+
+/* everything else is just aesthetic */
+
+
+/* Horizontal tab bar; dan
+---------------------------- */
+
+
+/* Vertical navigation
+---------------------- */
+
+ul#nav-main {
+  border: thin solid red;
+  list-style: none; }
+  
+  #nav-main li { 
+    border-bottom: thin solid #000305; }
+  
+  #nav-main li#t-last {
+    border-bottom: none; }      /* prevents a double border from container border */
+    
+    #nav-main li a {
+      display: block;
+      height: 25px;
+      line-height: 25px;
+      padding-left: 5px;
+      text-align: left;
+      text-decoration: none; }
+      
+.active a {                       /* causes box for the active anchor to overlap */
+  background: #9c9;
+  width: 100%; }
+
+
+/* Horizontal tab bar; float
+---------------------------- */
+
+ul {
+/*border: thin solid red;*/
+background: #000305;
+height: 40px;
+line-height: 30px;                  /* centers text vertically*/
+margin: 0 auto;
+text-align: center;
+width: 800px;
+list-style: none;
+}
+
+ul li {                             /* make the list horizontal */
+/*border: thin solid blue;*/
+float: left;
+margin: 0;
+}
+
+ul a:link, ul a:visited {
+color: #fff;
+display: inline-block;
+height: 30px;
+padding: 5px 1.5em;
+text-decoration: none;
+}
+
+ul a:hover, ul #active {
+background: #C74451;
+color: #fff;
+}
+
+/* Horizontal tab bar; inline
+----------------------------- */
+
+ul {
+/*border: thin solid red;*/
+list-style-type: none;
+padding: 3px 10px 3px 10px; 
+border-bottom: 1px solid #6c6;
+}
+
+ul li {                             /* make the list horizontal */
+/*border: thin solid blue;*/
+display: inline;
+}
+
+ul li a {
+text-decoration: none;
+padding: 3px 4px;                   /* increase size of the clickable area */
+border: 1px solid #6c6;
+background-color: #cfc;
+color: #666;                        /* text color */
+}
+
+ul a:hover {
+background: #fff;
+}
+
+ul li#active a {
+/*border: thin solid red;*/
+background-color: #fff;
+color: #000;
+  /* make the tab look active by covering the ul border */
+  position: relative;
+  top: 1px;
+  border-bottom: none;
+}
